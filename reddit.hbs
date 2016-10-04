@@ -1,0 +1,15 @@
+
+<div class="container-fluid red">
+
+<div class="top">
+   {{#link-to 'index'}} <i class="material-icons">arrow_back</i> {{/link-to}}Reddit Emberjs Results
+</div>
+
+{{#each model as |post|}}
+    <div class="result">
+    <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+    <p>score: {{post.score}} | comments: {{post.comments}} | status: {{post.archived}}</p>
+</div>
+{{/each}}
+
+</div>
